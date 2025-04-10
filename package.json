@@ -1,0 +1,48 @@
+{
+  "name": "zartero",
+  "version": "1.0.0",
+  "description": "Sistema de gestión Zartero por Crompel Solutions",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "pro": "node src/index.js",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder build"
+  },
+  "author": {
+    "name": "Crompel Solutions",
+    "email": "info@crompelsolutions.com",
+    "url": "https://crompelsolutions.com"
+  },
+  "build": {
+    "appId": "com.crompelsolutions.zartero",
+    "productName": "Zartero",
+    "copyright": "Copyright © 2024 Crompel Solutions",
+    "win": {
+      "publisherName": "Crompel Solutions",
+      "requestedExecutionLevel": "requireAdministrator",
+      "icon":"./icon.ico"
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "electron-reload": "^2.0.0-alpha.1",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.4",
+    "nodemailer": "^6.10.0",
+    "promise-mysql": "^5.2.0"
+  },
+  "homepage": "https://crompelsolutions.com/zartero",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crompelsolutions/zartero"
+  }
+}
